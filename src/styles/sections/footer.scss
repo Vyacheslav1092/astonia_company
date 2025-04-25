@@ -1,0 +1,20 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 50px;
+
+    @media (max-width: 590px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.footer-text {
+    @extend %lato-300;
+    font-size: 14px;
+    color: $black;
+}

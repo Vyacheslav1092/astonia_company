@@ -1,0 +1,17 @@
+// Configiguration
+@import "config/reset";
+@import "config/fonts";
+@import "config/base";
+
+// User import
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+
+// Components
+@import "sections/header";
+@import "sections/main";
+@import "sections/contacts";
+@import "sections/footer";
+
+
+

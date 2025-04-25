@@ -1,0 +1,99 @@
+$url: "./..";
+
+// colors  -----------------------------------
+$white: #ffffff;
+$black: #000000;
+$accent: #005FA3;
+
+
+// fonts -------------------------------------
+%lato-300 {
+    font-family: "Lato-300", sans-serif;
+    font-weight: 300;
+}
+
+%lato-700 {
+    font-family: "Lato-700", sans-serif;
+    font-weight: 700;
+}
+
+%lato-900 {
+    font-family: "Lato-900", sans-serif;
+    font-weight: 900;
+}
+
+%merr-300 {
+    font-family: "Merr-300", sans-serif;
+    font-weight: 300;
+}
+
+%merr-700 {
+    font-family: "Merr-700", sans-serif;
+    font-weight: 700;
+}
+
+%merr-900 {
+    font-family: "Merr-900", sans-serif;
+    font-weight: 900;
+}
+
+// typography --------------------------------
+.h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.h2 {
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.h3 {
+    //@extend %font-600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+// main element styles -----------------------
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    background-color: $white;
+    @extend %lato-300;
+    color: $white;
+    font-size: 14px;
+    line-height: 1.2;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    padding: 18px 19px;
+    max-width: 270px;
+    @extend %lato-300;
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    background-color: $accent;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+        opacity: .7;
+    }
+}
